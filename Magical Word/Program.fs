@@ -19,15 +19,15 @@ let translate ( letter:char ) =
     let mutable top = 0;
     let mutable bttom = 0;
     for i in primes do
-        if i > letterAsInt && top = 0 then
+        if i >= letterAsInt && top = 0 then
             top <- i;
         else if i < letterAsInt then 
             bttom <- i;
 
-    if top - letterAsInt < letterAsInt - bttom then top else bttom
-        |> char
+    if top <> 0 && top - letterAsInt < letterAsInt - bttom || bttom = 0 then top else bttom 
+    |> char
 
-let testWord( word:string ) =          
+let testWord( length:int, word:string ) =          
 
     let translated = String.Join( "", Seq.ofArray( word.ToCharArray() )
                                          |> Seq.map translate );
@@ -40,7 +40,7 @@ let main argv =
     let testCases = Int32.Parse(Console.ReadLine() )
     seq{ 0 .. testCases-1 }
     |> Seq.iter (fun x -> let length = Int32.Parse( Console.ReadLine() )
-                          testWord(String.Join("", seq{for _ in 0 .. length-1 do yield Console.Read() } ) ) )
+                          testWord(length, Console.ReadLine() ) )
     |> ignore
 
     0 // return an integer exit code
