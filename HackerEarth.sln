@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BasicIO", "ConsoleApp1\BasicIO.fsproj", "{6EEC6D7F-765A-48A4-8A03-9A49428BC7F9}"
-EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Magical Word", "Magical Word\Magical Word.fsproj", "{EDDE2466-7154-43E7-9DBB-4B154EE57B89}"
 EndProject
 Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "Cipher", "Cipher\Cipher.fsproj", "{AFFB58C3-31EE-45BD-898D-49CAB4805A59}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "HackerEarth.Tests", "HackerEarth.Tests\HackerEarth.Tests.fsproj", "{B41E8D98-545B-460E-8DA1-C9A1AAC2220C}"
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "HackerEarth.Tests", "HackerEarth.Tests\HackerEarth.Tests.fsproj", "{B41E8D98-545B-460E-8DA1-C9A1AAC2220C}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BasicImpl", "BasicImpl\BasicImpl.fsproj", "{C4A47188-D7F6-4480-9546-CBC2DAAD7D74}"
+EndProject
+Project("{6EC3EE1D-3C4E-46DD-8F32-0CC8E7565705}") = "BasicIO", "BasicIO\BasicIO.fsproj", "{79A0A028-658E-4A4F-9476-43AB14C98FCC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6EEC6D7F-765A-48A4-8A03-9A49428BC7F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6EEC6D7F-765A-48A4-8A03-9A49428BC7F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6EEC6D7F-765A-48A4-8A03-9A49428BC7F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6EEC6D7F-765A-48A4-8A03-9A49428BC7F9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{EDDE2466-7154-43E7-9DBB-4B154EE57B89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{EDDE2466-7154-43E7-9DBB-4B154EE57B89}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EDDE2466-7154-43E7-9DBB-4B154EE57B89}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +31,14 @@ Global
 		{B41E8D98-545B-460E-8DA1-C9A1AAC2220C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B41E8D98-545B-460E-8DA1-C9A1AAC2220C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B41E8D98-545B-460E-8DA1-C9A1AAC2220C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4A47188-D7F6-4480-9546-CBC2DAAD7D74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4A47188-D7F6-4480-9546-CBC2DAAD7D74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4A47188-D7F6-4480-9546-CBC2DAAD7D74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4A47188-D7F6-4480-9546-CBC2DAAD7D74}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79A0A028-658E-4A4F-9476-43AB14C98FCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79A0A028-658E-4A4F-9476-43AB14C98FCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79A0A028-658E-4A4F-9476-43AB14C98FCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79A0A028-658E-4A4F-9476-43AB14C98FCC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

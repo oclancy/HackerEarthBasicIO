@@ -9,8 +9,13 @@ let lowerCase = Array.ofSeq( seq { 97 .. 122 } )
 let numbers = Array.ofSeq( seq { 48 .. 57 } )
 
 let translate ( numbers: int[], letterAsNum:int, cipher:int ) =
-    let translated = letterAsNum + cipher
-    if numbers |> Array.exists( fun e -> e = translated ) then translated else (numbers.[ translated - numbers.[numbers.GetUpperBound(0)]  ] )-1
+
+    let effectiveCipher = cipher % numbers.Length
+    let max = numbers.[numbers.Length-1]
+    let mutable translated = letterAsNum + effectiveCipher
+    if translated > max then translated <- numbers.[ translated % max - 1 ]
+    
+    translated
 
 let translateLetter ( letter:char, cipher:int ) = 
     let letterAsNum = letter |> int
