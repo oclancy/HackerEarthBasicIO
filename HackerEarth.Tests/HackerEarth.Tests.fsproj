@@ -8,6 +8,7 @@
 
   <ItemGroup>
     <Compile Include="JaddoHatesMaths.Tests.fs" />
+    <Compile Include="RubiksCube.Tests.fs" />
     <Compile Include="Tests.fs" />
     <Compile Include="Program.fs" />
   </ItemGroup>
